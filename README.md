@@ -1,4 +1,4 @@
 pintos
 ======
 
-These pintos implementations are part of our operatinf systems lab
+These pintos implementations are part of our operating systems lab
