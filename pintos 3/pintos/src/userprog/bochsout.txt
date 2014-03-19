@@ -1,0 +1,2374 @@
+00000000000i[     ] Bochs x86 Emulator 2.5.1
+00000000000i[     ]   Built from SVN snapshot on January 6, 2012
+00000000000i[     ] Compiled on Aug  6 2012 at 20:40:59
+00000000000i[     ] System configuration
+00000000000i[     ]   processors: 1 (cores=1, HT threads=1)
+00000000000i[     ]   A20 line support: yes
+00000000000i[     ] IPS is set to 1000000
+00000000000i[     ] CPU configuration
+00000000000i[     ]   level: 6
+00000000000i[     ]   SMP support: no
+00000000000i[     ]   APIC support: xapic
+00000000000i[     ]   FPU support: yes
+00000000000i[     ]   MMX support: yes
+00000000000i[     ]   3dnow! support: no
+00000000000i[     ]   SEP support: yes
+00000000000i[     ]   SSE support: sse2
+00000000000i[     ]   XSAVE support: no 
+00000000000i[     ]   AES support: no
+00000000000i[     ]   MOVBE support: no
+00000000000i[     ]   x86-64 support: no
+00000000000i[     ]   MWAIT support: yes
+00000000000i[     ] Optimization configuration
+00000000000i[     ]   RepeatSpeedups support: no
+00000000000i[     ]   Fast function calls: no
+00000000000i[     ]   Handlers Chaining speedups: no
+00000000000i[     ] Devices configuration
+00000000000i[     ]   NE2000 support: no
+00000000000i[     ]   PCI support: no, enabled=no
+00000000000i[     ]   SB16 support: no
+00000000000i[     ]   USB support: no
+00000000000i[     ]   VGA extension support: vbe 
+00000000000i[MEM0 ] allocated memory at 0x2b0c2130a010. after alignment, vector=0x2b0c2130b000
+00000000000i[MEM0 ] 4.00MB
+00000000000i[MEM0 ] mem block size = 0x00100000, blocks=4
+00000000000i[MEM0 ] rom at 0xfffe0000/131072 ('/usr/local/share/bochs/BIOS-bochs-latest')
+00000000000i[CMOS ] Using specified time for initial clock
+00000000000i[CMOS ] Setting initial clock to: Thu Jan  1 05:30:00 1970 (time0=0)
+00000000000i[DMA  ] channel 4 used by cascade
+00000000000i[DMA  ] channel 2 used by Floppy Drive
+00000000000i[MEM0 ] Register memory access handlers: 0x00000000000a0000 - 0x00000000000bffff
+00000000000i[VGA  ] interval=200000
+00000000000i[MEM0 ] Register memory access handlers: 0x00000000e0000000 - 0x00000000e0ffffff
+00000000000i[BXVGA] VBE Bochs Display Extension Enabled
+00000000000i[MEM0 ] rom at 0xc0000/41472 ('/usr/local/share/bochs/VGABIOS-lgpl-latest')
+00000000000i[     ] init_dev of 'unmapped' plugin device by virtual method
+00000000000i[     ] init_dev of 'biosdev' plugin device by virtual method
+00000000000i[     ] init_dev of 'speaker' plugin device by virtual method
+00000000000i[SPEAK] Failed to open /dev/console: Permission denied
+00000000000i[SPEAK] Deactivating beep on console
+00000000000i[     ] init_dev of 'extfpuirq' plugin device by virtual method
+00000000000i[     ] init_dev of 'ioapic' plugin device by virtual method
+00000000000i[IOAP ] initializing I/O APIC
+00000000000i[MEM0 ] Register memory access handlers: 0x00000000fec00000 - 0x00000000fec00fff
+00000000000i[     ] init_dev of 'keyboard' plugin device by virtual method
+00000000000i[KBD  ] will paste characters every 1000 keyboard ticks
+00000000000i[     ] init_dev of 'harddrv' plugin device by virtual method
+00000000000i[HD   ] HD on ata0-0: '/tmp/UIJkJLVRhq.dsk', 'flat' mode
+00000000000i[IMG  ] hd_size: 516096
+00000000000i[HD   ] ata0-0: using specified geometry: CHS=1/16/63
+00000000000i[HD   ] HD on ata0-1: 'fs.dsk', 'flat' mode
+00000000000i[IMG  ] hd_size: 2064384
+00000000000i[HD   ] ata0-1: using specified geometry: CHS=4/16/63
+00000000000i[HD   ] Using boot sequence disk, none, none
+00000000000i[HD   ] Floppy boot signature check is enabled
+00000000000i[     ] init_dev of 'serial' plugin device by virtual method
+00000000000i[SER  ] com1 at 0x03f8 irq 4
+00000000000i[     ] init_dev of 'parallel' plugin device by virtual method
+00000000000i[PAR  ] parallel port 1 at 0x0378 irq 7
+00000000000i[     ] register state of 'unmapped' plugin device by virtual method
+00000000000i[     ] register state of 'biosdev' plugin device by virtual method
+00000000000i[     ] register state of 'speaker' plugin device by virtual method
+00000000000i[     ] register state of 'extfpuirq' plugin device by virtual method
+00000000000i[     ] register state of 'ioapic' plugin device by virtual method
+00000000000i[     ] register state of 'keyboard' plugin device by virtual method
+00000000000i[     ] register state of 'harddrv' plugin device by virtual method
+00000000000i[     ] register state of 'serial' plugin device by virtual method
+00000000000i[     ] register state of 'parallel' plugin device by virtual method
+00000000000i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00000000000i[CPU0 ] cpu hardware reset
+00000000000i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00000000000i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00000000000i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00000000000i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00000000000i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00000000000i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00000000000i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00000000000i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00000000000i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00000000000i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00000000000i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00000000000i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00000000000i[     ] reset of 'unmapped' plugin device by virtual method
+00000000000i[     ] reset of 'biosdev' plugin device by virtual method
+00000000000i[     ] reset of 'speaker' plugin device by virtual method
+00000000000i[     ] reset of 'extfpuirq' plugin device by virtual method
+00000000000i[     ] reset of 'ioapic' plugin device by virtual method
+00000000000i[     ] reset of 'keyboard' plugin device by virtual method
+00000000000i[     ] reset of 'harddrv' plugin device by virtual method
+00000000000i[     ] reset of 'serial' plugin device by virtual method
+00000000000i[     ] reset of 'parallel' plugin device by virtual method
+00000004855i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00000318302i[KBD  ] reset-disable command received
+00000319566i[BIOS ] Starting rombios32
+00000320013i[BIOS ] Shutdown flag 0
+00000320611i[BIOS ] ram_size=0x00400000
+00000321023i[BIOS ] ram_end=4MB
+00000332095i[BIOS ] Found 1 cpu(s)
+00000348349i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00000360919i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00000488537i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00000488608i[BXVGA] VBE known Display Interface b0c0
+00000488640i[BXVGA] VBE known Display Interface b0c5
+00000491565i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00000837438i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00000895458i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00003985357i[BIOS ] Booting from 0000:7c00
+00004163503e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00004163503e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00004163503i[CPU0 ] CPU is in protected mode (active)
+00004163503i[CPU0 ] CS.mode = 32 bit
+00004163503i[CPU0 ] SS.mode = 32 bit
+00004163503i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00004163503i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00004163503i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00004163503i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00004163503i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00004163503i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00004163503i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00004163503i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00004163503i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00004163503i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00004163503i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00004163503i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00004163503i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00004163503i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00004163503e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00004163503i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00004163503i[CPU0 ] cpu hardware reset
+00004163503i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00004163503i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00004163503i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00004163503i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00004163503i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00004163503i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00004163503i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00004163503i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00004163503i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00004163503i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00004163503i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00004163503i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00004163503i[     ] reset of 'unmapped' plugin device by virtual method
+00004163503i[     ] reset of 'biosdev' plugin device by virtual method
+00004163503i[     ] reset of 'speaker' plugin device by virtual method
+00004163503i[     ] reset of 'extfpuirq' plugin device by virtual method
+00004163503i[     ] reset of 'ioapic' plugin device by virtual method
+00004163503i[     ] reset of 'keyboard' plugin device by virtual method
+00004163503i[     ] reset of 'harddrv' plugin device by virtual method
+00004163503i[     ] reset of 'serial' plugin device by virtual method
+00004163503i[     ] reset of 'parallel' plugin device by virtual method
+00004168359i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00004481806i[KBD  ] reset-disable command received
+00004483070i[BIOS ] Starting rombios32
+00004483517i[BIOS ] Shutdown flag 0
+00004484115i[BIOS ] ram_size=0x00400000
+00004484527i[BIOS ] ram_end=4MB
+00004495737i[BIOS ] Found 1 cpu(s)
+00004511991i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00004524561i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00004652179i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00004652250i[BXVGA] VBE known Display Interface b0c0
+00004652282i[BXVGA] VBE known Display Interface b0c5
+00004655207i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00005001080i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00005059100i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00008148859i[BIOS ] Booting from 0000:7c00
+00008327005e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00008327005e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00008327005i[CPU0 ] CPU is in protected mode (active)
+00008327005i[CPU0 ] CS.mode = 32 bit
+00008327005i[CPU0 ] SS.mode = 32 bit
+00008327005i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00008327005i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00008327005i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00008327005i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00008327005i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00008327005i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00008327005i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00008327005i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00008327005i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00008327005i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00008327005i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00008327005i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00008327005i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00008327005i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00008327005e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00008327005i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00008327005i[CPU0 ] cpu hardware reset
+00008327005i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00008327005i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00008327005i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00008327005i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00008327005i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00008327005i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00008327005i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00008327005i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00008327005i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00008327005i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00008327005i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00008327005i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00008327005i[     ] reset of 'unmapped' plugin device by virtual method
+00008327005i[     ] reset of 'biosdev' plugin device by virtual method
+00008327005i[     ] reset of 'speaker' plugin device by virtual method
+00008327005i[     ] reset of 'extfpuirq' plugin device by virtual method
+00008327005i[     ] reset of 'ioapic' plugin device by virtual method
+00008327005i[     ] reset of 'keyboard' plugin device by virtual method
+00008327005i[     ] reset of 'harddrv' plugin device by virtual method
+00008327005i[     ] reset of 'serial' plugin device by virtual method
+00008327005i[     ] reset of 'parallel' plugin device by virtual method
+00008331861i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00008645308i[KBD  ] reset-disable command received
+00008646572i[BIOS ] Starting rombios32
+00008647019i[BIOS ] Shutdown flag 0
+00008647617i[BIOS ] ram_size=0x00400000
+00008648029i[BIOS ] ram_end=4MB
+00008659227i[BIOS ] Found 1 cpu(s)
+00008675481i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00008688051i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00008815669i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00008815740i[BXVGA] VBE known Display Interface b0c0
+00008815772i[BXVGA] VBE known Display Interface b0c5
+00008818697i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00009164570i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00009222590i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00012312359i[BIOS ] Booting from 0000:7c00
+00012490505e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00012490505e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00012490505i[CPU0 ] CPU is in protected mode (active)
+00012490505i[CPU0 ] CS.mode = 32 bit
+00012490505i[CPU0 ] SS.mode = 32 bit
+00012490505i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00012490505i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00012490505i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00012490505i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00012490505i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00012490505i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00012490505i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00012490505i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00012490505i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00012490505i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00012490505i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00012490505i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00012490505i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00012490505i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00012490505e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00012490505i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00012490505i[CPU0 ] cpu hardware reset
+00012490505i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00012490505i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00012490505i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00012490505i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00012490505i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00012490505i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00012490505i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00012490505i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00012490505i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00012490505i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00012490505i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00012490505i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00012490505i[     ] reset of 'unmapped' plugin device by virtual method
+00012490505i[     ] reset of 'biosdev' plugin device by virtual method
+00012490505i[     ] reset of 'speaker' plugin device by virtual method
+00012490505i[     ] reset of 'extfpuirq' plugin device by virtual method
+00012490505i[     ] reset of 'ioapic' plugin device by virtual method
+00012490505i[     ] reset of 'keyboard' plugin device by virtual method
+00012490505i[     ] reset of 'harddrv' plugin device by virtual method
+00012490505i[     ] reset of 'serial' plugin device by virtual method
+00012490505i[     ] reset of 'parallel' plugin device by virtual method
+00012495361i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00012808808i[KBD  ] reset-disable command received
+00012810072i[BIOS ] Starting rombios32
+00012810519i[BIOS ] Shutdown flag 0
+00012811117i[BIOS ] ram_size=0x00400000
+00012811529i[BIOS ] ram_end=4MB
+00012822595i[BIOS ] Found 1 cpu(s)
+00012838849i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00012851419i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00012979037i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00012979108i[BXVGA] VBE known Display Interface b0c0
+00012979140i[BXVGA] VBE known Display Interface b0c5
+00012982065i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00013327938i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00013385958i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00016475857i[BIOS ] Booting from 0000:7c00
+00016654003e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00016654003e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00016654003i[CPU0 ] CPU is in protected mode (active)
+00016654003i[CPU0 ] CS.mode = 32 bit
+00016654003i[CPU0 ] SS.mode = 32 bit
+00016654003i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00016654003i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00016654003i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00016654003i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00016654003i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00016654003i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00016654003i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00016654003i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00016654003i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00016654003i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00016654003i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00016654003i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00016654003i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00016654003i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00016654003e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00016654003i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00016654003i[CPU0 ] cpu hardware reset
+00016654003i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00016654003i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00016654003i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00016654003i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00016654003i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00016654003i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00016654003i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00016654003i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00016654003i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00016654003i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00016654003i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00016654003i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00016654003i[     ] reset of 'unmapped' plugin device by virtual method
+00016654003i[     ] reset of 'biosdev' plugin device by virtual method
+00016654003i[     ] reset of 'speaker' plugin device by virtual method
+00016654003i[     ] reset of 'extfpuirq' plugin device by virtual method
+00016654003i[     ] reset of 'ioapic' plugin device by virtual method
+00016654003i[     ] reset of 'keyboard' plugin device by virtual method
+00016654003i[     ] reset of 'harddrv' plugin device by virtual method
+00016654003i[     ] reset of 'serial' plugin device by virtual method
+00016654003i[     ] reset of 'parallel' plugin device by virtual method
+00016658859i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00016972306i[KBD  ] reset-disable command received
+00016973570i[BIOS ] Starting rombios32
+00016974017i[BIOS ] Shutdown flag 0
+00016974615i[BIOS ] ram_size=0x00400000
+00016975027i[BIOS ] ram_end=4MB
+00016986237i[BIOS ] Found 1 cpu(s)
+00017002491i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00017015061i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00017142679i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00017142750i[BXVGA] VBE known Display Interface b0c0
+00017142782i[BXVGA] VBE known Display Interface b0c5
+00017145707i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00017491580i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00017549600i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00020639359i[BIOS ] Booting from 0000:7c00
+00020817505e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00020817505e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00020817505i[CPU0 ] CPU is in protected mode (active)
+00020817505i[CPU0 ] CS.mode = 32 bit
+00020817505i[CPU0 ] SS.mode = 32 bit
+00020817505i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00020817505i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00020817505i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00020817505i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00020817505i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00020817505i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00020817505i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00020817505i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00020817505i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00020817505i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00020817505i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00020817505i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00020817505i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00020817505i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00020817505e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00020817505i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00020817505i[CPU0 ] cpu hardware reset
+00020817505i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00020817505i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00020817505i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00020817505i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00020817505i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00020817505i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00020817505i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00020817505i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00020817505i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00020817505i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00020817505i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00020817505i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00020817505i[     ] reset of 'unmapped' plugin device by virtual method
+00020817505i[     ] reset of 'biosdev' plugin device by virtual method
+00020817505i[     ] reset of 'speaker' plugin device by virtual method
+00020817505i[     ] reset of 'extfpuirq' plugin device by virtual method
+00020817505i[     ] reset of 'ioapic' plugin device by virtual method
+00020817505i[     ] reset of 'keyboard' plugin device by virtual method
+00020817505i[     ] reset of 'harddrv' plugin device by virtual method
+00020817505i[     ] reset of 'serial' plugin device by virtual method
+00020817505i[     ] reset of 'parallel' plugin device by virtual method
+00020822361i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00021135808i[KBD  ] reset-disable command received
+00021137072i[BIOS ] Starting rombios32
+00021137519i[BIOS ] Shutdown flag 0
+00021138117i[BIOS ] ram_size=0x00400000
+00021138529i[BIOS ] ram_end=4MB
+00021149727i[BIOS ] Found 1 cpu(s)
+00021165981i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00021178551i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00021306169i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00021306240i[BXVGA] VBE known Display Interface b0c0
+00021306272i[BXVGA] VBE known Display Interface b0c5
+00021309197i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00021655070i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00021713090i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00024802859i[BIOS ] Booting from 0000:7c00
+00024981005e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00024981005e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00024981005i[CPU0 ] CPU is in protected mode (active)
+00024981005i[CPU0 ] CS.mode = 32 bit
+00024981005i[CPU0 ] SS.mode = 32 bit
+00024981005i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00024981005i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00024981005i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00024981005i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00024981005i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00024981005i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00024981005i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00024981005i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00024981005i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00024981005i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00024981005i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00024981005i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00024981005i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00024981005i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00024981005e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00024981005i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00024981005i[CPU0 ] cpu hardware reset
+00024981005i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00024981005i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00024981005i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00024981005i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00024981005i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00024981005i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00024981005i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00024981005i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00024981005i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00024981005i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00024981005i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00024981005i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00024981005i[     ] reset of 'unmapped' plugin device by virtual method
+00024981005i[     ] reset of 'biosdev' plugin device by virtual method
+00024981005i[     ] reset of 'speaker' plugin device by virtual method
+00024981005i[     ] reset of 'extfpuirq' plugin device by virtual method
+00024981005i[     ] reset of 'ioapic' plugin device by virtual method
+00024981005i[     ] reset of 'keyboard' plugin device by virtual method
+00024981005i[     ] reset of 'harddrv' plugin device by virtual method
+00024981005i[     ] reset of 'serial' plugin device by virtual method
+00024981005i[     ] reset of 'parallel' plugin device by virtual method
+00024985861i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00025299308i[KBD  ] reset-disable command received
+00025300572i[BIOS ] Starting rombios32
+00025301019i[BIOS ] Shutdown flag 0
+00025301617i[BIOS ] ram_size=0x00400000
+00025302029i[BIOS ] ram_end=4MB
+00025313095i[BIOS ] Found 1 cpu(s)
+00025329349i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00025341919i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00025469537i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00025469608i[BXVGA] VBE known Display Interface b0c0
+00025469640i[BXVGA] VBE known Display Interface b0c5
+00025472565i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00025818438i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00025876458i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00028966357i[BIOS ] Booting from 0000:7c00
+00029144503e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00029144503e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00029144503i[CPU0 ] CPU is in protected mode (active)
+00029144503i[CPU0 ] CS.mode = 32 bit
+00029144503i[CPU0 ] SS.mode = 32 bit
+00029144503i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00029144503i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00029144503i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00029144503i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00029144503i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00029144503i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00029144503i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00029144503i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00029144503i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00029144503i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00029144503i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00029144503i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00029144503i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00029144503i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00029144503e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00029144503i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00029144503i[CPU0 ] cpu hardware reset
+00029144503i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00029144503i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00029144503i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00029144503i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00029144503i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00029144503i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00029144503i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00029144503i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00029144503i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00029144503i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00029144503i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00029144503i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00029144503i[     ] reset of 'unmapped' plugin device by virtual method
+00029144503i[     ] reset of 'biosdev' plugin device by virtual method
+00029144503i[     ] reset of 'speaker' plugin device by virtual method
+00029144503i[     ] reset of 'extfpuirq' plugin device by virtual method
+00029144503i[     ] reset of 'ioapic' plugin device by virtual method
+00029144503i[     ] reset of 'keyboard' plugin device by virtual method
+00029144503i[     ] reset of 'harddrv' plugin device by virtual method
+00029144503i[     ] reset of 'serial' plugin device by virtual method
+00029144503i[     ] reset of 'parallel' plugin device by virtual method
+00029149359i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00029462806i[KBD  ] reset-disable command received
+00029464070i[BIOS ] Starting rombios32
+00029464517i[BIOS ] Shutdown flag 0
+00029465115i[BIOS ] ram_size=0x00400000
+00029465527i[BIOS ] ram_end=4MB
+00029476737i[BIOS ] Found 1 cpu(s)
+00029492991i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00029505561i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00029633179i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00029633250i[BXVGA] VBE known Display Interface b0c0
+00029633282i[BXVGA] VBE known Display Interface b0c5
+00029636207i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00029982080i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00030040100i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00033129859i[BIOS ] Booting from 0000:7c00
+00033308005e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00033308005e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00033308005i[CPU0 ] CPU is in protected mode (active)
+00033308005i[CPU0 ] CS.mode = 32 bit
+00033308005i[CPU0 ] SS.mode = 32 bit
+00033308005i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00033308005i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00033308005i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00033308005i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00033308005i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00033308005i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00033308005i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00033308005i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00033308005i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00033308005i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00033308005i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00033308005i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00033308005i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00033308005i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00033308005e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00033308005i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00033308005i[CPU0 ] cpu hardware reset
+00033308005i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00033308005i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00033308005i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00033308005i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00033308005i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00033308005i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00033308005i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00033308005i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00033308005i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00033308005i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00033308005i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00033308005i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00033308005i[     ] reset of 'unmapped' plugin device by virtual method
+00033308005i[     ] reset of 'biosdev' plugin device by virtual method
+00033308005i[     ] reset of 'speaker' plugin device by virtual method
+00033308005i[     ] reset of 'extfpuirq' plugin device by virtual method
+00033308005i[     ] reset of 'ioapic' plugin device by virtual method
+00033308005i[     ] reset of 'keyboard' plugin device by virtual method
+00033308005i[     ] reset of 'harddrv' plugin device by virtual method
+00033308005i[     ] reset of 'serial' plugin device by virtual method
+00033308005i[     ] reset of 'parallel' plugin device by virtual method
+00033312861i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00033626308i[KBD  ] reset-disable command received
+00033627572i[BIOS ] Starting rombios32
+00033628019i[BIOS ] Shutdown flag 0
+00033628617i[BIOS ] ram_size=0x00400000
+00033629029i[BIOS ] ram_end=4MB
+00033640227i[BIOS ] Found 1 cpu(s)
+00033656481i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00033669051i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00033796669i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00033796740i[BXVGA] VBE known Display Interface b0c0
+00033796772i[BXVGA] VBE known Display Interface b0c5
+00033799697i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00034145570i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00034203590i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00037293359i[BIOS ] Booting from 0000:7c00
+00037471505e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00037471505e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00037471505i[CPU0 ] CPU is in protected mode (active)
+00037471505i[CPU0 ] CS.mode = 32 bit
+00037471505i[CPU0 ] SS.mode = 32 bit
+00037471505i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00037471505i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00037471505i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00037471505i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00037471505i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00037471505i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00037471505i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00037471505i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00037471505i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00037471505i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00037471505i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00037471505i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00037471505i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00037471505i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00037471505e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00037471505i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00037471505i[CPU0 ] cpu hardware reset
+00037471505i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00037471505i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00037471505i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00037471505i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00037471505i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00037471505i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00037471505i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00037471505i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00037471505i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00037471505i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00037471505i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00037471505i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00037471505i[     ] reset of 'unmapped' plugin device by virtual method
+00037471505i[     ] reset of 'biosdev' plugin device by virtual method
+00037471505i[     ] reset of 'speaker' plugin device by virtual method
+00037471505i[     ] reset of 'extfpuirq' plugin device by virtual method
+00037471505i[     ] reset of 'ioapic' plugin device by virtual method
+00037471505i[     ] reset of 'keyboard' plugin device by virtual method
+00037471505i[     ] reset of 'harddrv' plugin device by virtual method
+00037471505i[     ] reset of 'serial' plugin device by virtual method
+00037471505i[     ] reset of 'parallel' plugin device by virtual method
+00037476361i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00037789808i[KBD  ] reset-disable command received
+00037791072i[BIOS ] Starting rombios32
+00037791519i[BIOS ] Shutdown flag 0
+00037792117i[BIOS ] ram_size=0x00400000
+00037792529i[BIOS ] ram_end=4MB
+00037803595i[BIOS ] Found 1 cpu(s)
+00037819849i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00037832419i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00037960037i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00037960108i[BXVGA] VBE known Display Interface b0c0
+00037960140i[BXVGA] VBE known Display Interface b0c5
+00037963065i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00038308938i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00038366958i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00041456857i[BIOS ] Booting from 0000:7c00
+00041635003e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00041635003e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00041635003i[CPU0 ] CPU is in protected mode (active)
+00041635003i[CPU0 ] CS.mode = 32 bit
+00041635003i[CPU0 ] SS.mode = 32 bit
+00041635003i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00041635003i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00041635003i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00041635003i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00041635003i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00041635003i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00041635003i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00041635003i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00041635003i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00041635003i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00041635003i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00041635003i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00041635003i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00041635003i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00041635003e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00041635003i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00041635003i[CPU0 ] cpu hardware reset
+00041635003i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00041635003i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00041635003i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00041635003i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00041635003i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00041635003i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00041635003i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00041635003i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00041635003i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00041635003i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00041635003i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00041635003i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00041635003i[     ] reset of 'unmapped' plugin device by virtual method
+00041635003i[     ] reset of 'biosdev' plugin device by virtual method
+00041635003i[     ] reset of 'speaker' plugin device by virtual method
+00041635003i[     ] reset of 'extfpuirq' plugin device by virtual method
+00041635003i[     ] reset of 'ioapic' plugin device by virtual method
+00041635003i[     ] reset of 'keyboard' plugin device by virtual method
+00041635003i[     ] reset of 'harddrv' plugin device by virtual method
+00041635003i[     ] reset of 'serial' plugin device by virtual method
+00041635003i[     ] reset of 'parallel' plugin device by virtual method
+00041639859i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00041953306i[KBD  ] reset-disable command received
+00041954570i[BIOS ] Starting rombios32
+00041955017i[BIOS ] Shutdown flag 0
+00041955615i[BIOS ] ram_size=0x00400000
+00041956027i[BIOS ] ram_end=4MB
+00041967237i[BIOS ] Found 1 cpu(s)
+00041983491i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00041996061i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00042123679i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00042123750i[BXVGA] VBE known Display Interface b0c0
+00042123782i[BXVGA] VBE known Display Interface b0c5
+00042126707i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00042472580i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00042530600i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00045620359i[BIOS ] Booting from 0000:7c00
+00045798505e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00045798505e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00045798505i[CPU0 ] CPU is in protected mode (active)
+00045798505i[CPU0 ] CS.mode = 32 bit
+00045798505i[CPU0 ] SS.mode = 32 bit
+00045798505i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00045798505i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00045798505i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00045798505i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00045798505i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00045798505i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00045798505i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00045798505i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00045798505i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00045798505i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00045798505i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00045798505i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00045798505i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00045798505i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00045798505e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00045798505i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00045798505i[CPU0 ] cpu hardware reset
+00045798505i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00045798505i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00045798505i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00045798505i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00045798505i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00045798505i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00045798505i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00045798505i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00045798505i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00045798505i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00045798505i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00045798505i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00045798505i[     ] reset of 'unmapped' plugin device by virtual method
+00045798505i[     ] reset of 'biosdev' plugin device by virtual method
+00045798505i[     ] reset of 'speaker' plugin device by virtual method
+00045798505i[     ] reset of 'extfpuirq' plugin device by virtual method
+00045798505i[     ] reset of 'ioapic' plugin device by virtual method
+00045798505i[     ] reset of 'keyboard' plugin device by virtual method
+00045798505i[     ] reset of 'harddrv' plugin device by virtual method
+00045798505i[     ] reset of 'serial' plugin device by virtual method
+00045798505i[     ] reset of 'parallel' plugin device by virtual method
+00045803361i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00046116808i[KBD  ] reset-disable command received
+00046118072i[BIOS ] Starting rombios32
+00046118519i[BIOS ] Shutdown flag 0
+00046119117i[BIOS ] ram_size=0x00400000
+00046119529i[BIOS ] ram_end=4MB
+00046130727i[BIOS ] Found 1 cpu(s)
+00046146981i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00046159551i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00046287169i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00046287240i[BXVGA] VBE known Display Interface b0c0
+00046287272i[BXVGA] VBE known Display Interface b0c5
+00046290197i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00046636070i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00046694090i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00049783859i[BIOS ] Booting from 0000:7c00
+00049962005e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00049962005e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00049962005i[CPU0 ] CPU is in protected mode (active)
+00049962005i[CPU0 ] CS.mode = 32 bit
+00049962005i[CPU0 ] SS.mode = 32 bit
+00049962005i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00049962005i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00049962005i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00049962005i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00049962005i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00049962005i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00049962005i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00049962005i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00049962005i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00049962005i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00049962005i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00049962005i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00049962005i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00049962005i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00049962005e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00049962005i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00049962005i[CPU0 ] cpu hardware reset
+00049962005i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00049962005i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00049962005i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00049962005i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00049962005i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00049962005i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00049962005i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00049962005i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00049962005i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00049962005i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00049962005i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00049962005i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00049962005i[     ] reset of 'unmapped' plugin device by virtual method
+00049962005i[     ] reset of 'biosdev' plugin device by virtual method
+00049962005i[     ] reset of 'speaker' plugin device by virtual method
+00049962005i[     ] reset of 'extfpuirq' plugin device by virtual method
+00049962005i[     ] reset of 'ioapic' plugin device by virtual method
+00049962005i[     ] reset of 'keyboard' plugin device by virtual method
+00049962005i[     ] reset of 'harddrv' plugin device by virtual method
+00049962005i[     ] reset of 'serial' plugin device by virtual method
+00049962005i[     ] reset of 'parallel' plugin device by virtual method
+00049966861i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00050280308i[KBD  ] reset-disable command received
+00050281572i[BIOS ] Starting rombios32
+00050282019i[BIOS ] Shutdown flag 0
+00050282617i[BIOS ] ram_size=0x00400000
+00050283029i[BIOS ] ram_end=4MB
+00050294095i[BIOS ] Found 1 cpu(s)
+00050310349i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00050322919i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00050450537i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00050450608i[BXVGA] VBE known Display Interface b0c0
+00050450640i[BXVGA] VBE known Display Interface b0c5
+00050453565i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00050799438i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00050857458i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00053947357i[BIOS ] Booting from 0000:7c00
+00054125503e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00054125503e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00054125503i[CPU0 ] CPU is in protected mode (active)
+00054125503i[CPU0 ] CS.mode = 32 bit
+00054125503i[CPU0 ] SS.mode = 32 bit
+00054125503i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00054125503i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00054125503i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00054125503i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00054125503i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00054125503i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00054125503i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00054125503i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00054125503i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00054125503i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00054125503i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00054125503i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00054125503i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00054125503i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00054125503e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00054125503i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00054125503i[CPU0 ] cpu hardware reset
+00054125503i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00054125503i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00054125503i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00054125503i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00054125503i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00054125503i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00054125503i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00054125503i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00054125503i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00054125503i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00054125503i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00054125503i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00054125503i[     ] reset of 'unmapped' plugin device by virtual method
+00054125503i[     ] reset of 'biosdev' plugin device by virtual method
+00054125503i[     ] reset of 'speaker' plugin device by virtual method
+00054125503i[     ] reset of 'extfpuirq' plugin device by virtual method
+00054125503i[     ] reset of 'ioapic' plugin device by virtual method
+00054125503i[     ] reset of 'keyboard' plugin device by virtual method
+00054125503i[     ] reset of 'harddrv' plugin device by virtual method
+00054125503i[     ] reset of 'serial' plugin device by virtual method
+00054125503i[     ] reset of 'parallel' plugin device by virtual method
+00054130359i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00054443806i[KBD  ] reset-disable command received
+00054445070i[BIOS ] Starting rombios32
+00054445517i[BIOS ] Shutdown flag 0
+00054446115i[BIOS ] ram_size=0x00400000
+00054446527i[BIOS ] ram_end=4MB
+00054457737i[BIOS ] Found 1 cpu(s)
+00054473991i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00054486561i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00054614179i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00054614250i[BXVGA] VBE known Display Interface b0c0
+00054614282i[BXVGA] VBE known Display Interface b0c5
+00054617207i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00054963080i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00055021100i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00058110859i[BIOS ] Booting from 0000:7c00
+00058289005e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00058289005e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00058289005i[CPU0 ] CPU is in protected mode (active)
+00058289005i[CPU0 ] CS.mode = 32 bit
+00058289005i[CPU0 ] SS.mode = 32 bit
+00058289005i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00058289005i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00058289005i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00058289005i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00058289005i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00058289005i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00058289005i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00058289005i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00058289005i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00058289005i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00058289005i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00058289005i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00058289005i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00058289005i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00058289005e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00058289005i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00058289005i[CPU0 ] cpu hardware reset
+00058289005i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00058289005i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00058289005i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00058289005i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00058289005i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00058289005i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00058289005i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00058289005i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00058289005i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00058289005i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00058289005i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00058289005i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00058289005i[     ] reset of 'unmapped' plugin device by virtual method
+00058289005i[     ] reset of 'biosdev' plugin device by virtual method
+00058289005i[     ] reset of 'speaker' plugin device by virtual method
+00058289005i[     ] reset of 'extfpuirq' plugin device by virtual method
+00058289005i[     ] reset of 'ioapic' plugin device by virtual method
+00058289005i[     ] reset of 'keyboard' plugin device by virtual method
+00058289005i[     ] reset of 'harddrv' plugin device by virtual method
+00058289005i[     ] reset of 'serial' plugin device by virtual method
+00058289005i[     ] reset of 'parallel' plugin device by virtual method
+00058293861i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00058607308i[KBD  ] reset-disable command received
+00058608572i[BIOS ] Starting rombios32
+00058609019i[BIOS ] Shutdown flag 0
+00058609617i[BIOS ] ram_size=0x00400000
+00058610029i[BIOS ] ram_end=4MB
+00058621227i[BIOS ] Found 1 cpu(s)
+00058637481i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00058650051i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00058777669i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00058777740i[BXVGA] VBE known Display Interface b0c0
+00058777772i[BXVGA] VBE known Display Interface b0c5
+00058780697i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00059126570i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00059184590i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00062274359i[BIOS ] Booting from 0000:7c00
+00062452505e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00062452505e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00062452505i[CPU0 ] CPU is in protected mode (active)
+00062452505i[CPU0 ] CS.mode = 32 bit
+00062452505i[CPU0 ] SS.mode = 32 bit
+00062452505i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00062452505i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00062452505i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00062452505i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00062452505i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00062452505i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00062452505i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00062452505i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00062452505i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00062452505i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00062452505i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00062452505i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00062452505i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00062452505i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00062452505e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00062452505i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00062452505i[CPU0 ] cpu hardware reset
+00062452505i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00062452505i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00062452505i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00062452505i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00062452505i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00062452505i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00062452505i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00062452505i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00062452505i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00062452505i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00062452505i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00062452505i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00062452505i[     ] reset of 'unmapped' plugin device by virtual method
+00062452505i[     ] reset of 'biosdev' plugin device by virtual method
+00062452505i[     ] reset of 'speaker' plugin device by virtual method
+00062452505i[     ] reset of 'extfpuirq' plugin device by virtual method
+00062452505i[     ] reset of 'ioapic' plugin device by virtual method
+00062452505i[     ] reset of 'keyboard' plugin device by virtual method
+00062452505i[     ] reset of 'harddrv' plugin device by virtual method
+00062452505i[     ] reset of 'serial' plugin device by virtual method
+00062452505i[     ] reset of 'parallel' plugin device by virtual method
+00062457361i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00062770808i[KBD  ] reset-disable command received
+00062772072i[BIOS ] Starting rombios32
+00062772519i[BIOS ] Shutdown flag 0
+00062773117i[BIOS ] ram_size=0x00400000
+00062773529i[BIOS ] ram_end=4MB
+00062784595i[BIOS ] Found 1 cpu(s)
+00062800849i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00062813419i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00062941037i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00062941108i[BXVGA] VBE known Display Interface b0c0
+00062941140i[BXVGA] VBE known Display Interface b0c5
+00062944065i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00063289938i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00063347958i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00066437857i[BIOS ] Booting from 0000:7c00
+00066616003e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00066616003e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00066616003i[CPU0 ] CPU is in protected mode (active)
+00066616003i[CPU0 ] CS.mode = 32 bit
+00066616003i[CPU0 ] SS.mode = 32 bit
+00066616003i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00066616003i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00066616003i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00066616003i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00066616003i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00066616003i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00066616003i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00066616003i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00066616003i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00066616003i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00066616003i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00066616003i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00066616003i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00066616003i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00066616003e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00066616003i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00066616003i[CPU0 ] cpu hardware reset
+00066616003i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00066616003i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00066616003i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00066616003i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00066616003i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00066616003i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00066616003i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00066616003i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00066616003i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00066616003i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00066616003i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00066616003i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00066616003i[     ] reset of 'unmapped' plugin device by virtual method
+00066616003i[     ] reset of 'biosdev' plugin device by virtual method
+00066616003i[     ] reset of 'speaker' plugin device by virtual method
+00066616003i[     ] reset of 'extfpuirq' plugin device by virtual method
+00066616003i[     ] reset of 'ioapic' plugin device by virtual method
+00066616003i[     ] reset of 'keyboard' plugin device by virtual method
+00066616003i[     ] reset of 'harddrv' plugin device by virtual method
+00066616003i[     ] reset of 'serial' plugin device by virtual method
+00066616003i[     ] reset of 'parallel' plugin device by virtual method
+00066620859i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00066934306i[KBD  ] reset-disable command received
+00066935570i[BIOS ] Starting rombios32
+00066936017i[BIOS ] Shutdown flag 0
+00066936615i[BIOS ] ram_size=0x00400000
+00066937027i[BIOS ] ram_end=4MB
+00066948237i[BIOS ] Found 1 cpu(s)
+00066964491i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00066977061i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00067104679i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00067104750i[BXVGA] VBE known Display Interface b0c0
+00067104782i[BXVGA] VBE known Display Interface b0c5
+00067107707i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00067453580i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00067511600i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00070601359i[BIOS ] Booting from 0000:7c00
+00070779505e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00070779505e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00070779505i[CPU0 ] CPU is in protected mode (active)
+00070779505i[CPU0 ] CS.mode = 32 bit
+00070779505i[CPU0 ] SS.mode = 32 bit
+00070779505i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00070779505i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00070779505i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00070779505i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00070779505i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00070779505i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00070779505i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00070779505i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00070779505i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00070779505i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00070779505i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00070779505i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00070779505i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00070779505i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00070779505e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00070779505i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00070779505i[CPU0 ] cpu hardware reset
+00070779505i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00070779505i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00070779505i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00070779505i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00070779505i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00070779505i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00070779505i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00070779505i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00070779505i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00070779505i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00070779505i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00070779505i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00070779505i[     ] reset of 'unmapped' plugin device by virtual method
+00070779505i[     ] reset of 'biosdev' plugin device by virtual method
+00070779505i[     ] reset of 'speaker' plugin device by virtual method
+00070779505i[     ] reset of 'extfpuirq' plugin device by virtual method
+00070779505i[     ] reset of 'ioapic' plugin device by virtual method
+00070779505i[     ] reset of 'keyboard' plugin device by virtual method
+00070779505i[     ] reset of 'harddrv' plugin device by virtual method
+00070779505i[     ] reset of 'serial' plugin device by virtual method
+00070779505i[     ] reset of 'parallel' plugin device by virtual method
+00070784361i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00071097808i[KBD  ] reset-disable command received
+00071099072i[BIOS ] Starting rombios32
+00071099519i[BIOS ] Shutdown flag 0
+00071100117i[BIOS ] ram_size=0x00400000
+00071100529i[BIOS ] ram_end=4MB
+00071111727i[BIOS ] Found 1 cpu(s)
+00071127981i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00071140551i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00071268169i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00071268240i[BXVGA] VBE known Display Interface b0c0
+00071268272i[BXVGA] VBE known Display Interface b0c5
+00071271197i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00071617070i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00071675090i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00074764859i[BIOS ] Booting from 0000:7c00
+00074943005e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00074943005e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00074943005i[CPU0 ] CPU is in protected mode (active)
+00074943005i[CPU0 ] CS.mode = 32 bit
+00074943005i[CPU0 ] SS.mode = 32 bit
+00074943005i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00074943005i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00074943005i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00074943005i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00074943005i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00074943005i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00074943005i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00074943005i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00074943005i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00074943005i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00074943005i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00074943005i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00074943005i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00074943005i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00074943005e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00074943005i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00074943005i[CPU0 ] cpu hardware reset
+00074943005i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00074943005i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00074943005i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00074943005i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00074943005i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00074943005i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00074943005i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00074943005i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00074943005i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00074943005i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00074943005i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00074943005i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00074943005i[     ] reset of 'unmapped' plugin device by virtual method
+00074943005i[     ] reset of 'biosdev' plugin device by virtual method
+00074943005i[     ] reset of 'speaker' plugin device by virtual method
+00074943005i[     ] reset of 'extfpuirq' plugin device by virtual method
+00074943005i[     ] reset of 'ioapic' plugin device by virtual method
+00074943005i[     ] reset of 'keyboard' plugin device by virtual method
+00074943005i[     ] reset of 'harddrv' plugin device by virtual method
+00074943005i[     ] reset of 'serial' plugin device by virtual method
+00074943005i[     ] reset of 'parallel' plugin device by virtual method
+00074947861i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00075261308i[KBD  ] reset-disable command received
+00075262572i[BIOS ] Starting rombios32
+00075263019i[BIOS ] Shutdown flag 0
+00075263617i[BIOS ] ram_size=0x00400000
+00075264029i[BIOS ] ram_end=4MB
+00075275095i[BIOS ] Found 1 cpu(s)
+00075291349i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00075303919i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00075431537i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00075431608i[BXVGA] VBE known Display Interface b0c0
+00075431640i[BXVGA] VBE known Display Interface b0c5
+00075434565i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00075780438i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00075838458i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00078928357i[BIOS ] Booting from 0000:7c00
+00079106503e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00079106503e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00079106503i[CPU0 ] CPU is in protected mode (active)
+00079106503i[CPU0 ] CS.mode = 32 bit
+00079106503i[CPU0 ] SS.mode = 32 bit
+00079106503i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00079106503i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00079106503i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00079106503i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00079106503i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00079106503i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00079106503i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00079106503i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00079106503i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00079106503i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00079106503i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00079106503i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00079106503i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00079106503i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00079106503e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00079106503i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00079106503i[CPU0 ] cpu hardware reset
+00079106503i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00079106503i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00079106503i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00079106503i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00079106503i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00079106503i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00079106503i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00079106503i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00079106503i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00079106503i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00079106503i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00079106503i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00079106503i[     ] reset of 'unmapped' plugin device by virtual method
+00079106503i[     ] reset of 'biosdev' plugin device by virtual method
+00079106503i[     ] reset of 'speaker' plugin device by virtual method
+00079106503i[     ] reset of 'extfpuirq' plugin device by virtual method
+00079106503i[     ] reset of 'ioapic' plugin device by virtual method
+00079106503i[     ] reset of 'keyboard' plugin device by virtual method
+00079106503i[     ] reset of 'harddrv' plugin device by virtual method
+00079106503i[     ] reset of 'serial' plugin device by virtual method
+00079106503i[     ] reset of 'parallel' plugin device by virtual method
+00079111359i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00079424806i[KBD  ] reset-disable command received
+00079426070i[BIOS ] Starting rombios32
+00079426517i[BIOS ] Shutdown flag 0
+00079427115i[BIOS ] ram_size=0x00400000
+00079427527i[BIOS ] ram_end=4MB
+00079438737i[BIOS ] Found 1 cpu(s)
+00079454991i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00079467561i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00079595179i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00079595250i[BXVGA] VBE known Display Interface b0c0
+00079595282i[BXVGA] VBE known Display Interface b0c5
+00079598207i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00079944080i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00080002100i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00083091859i[BIOS ] Booting from 0000:7c00
+00083270005e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00083270005e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00083270005i[CPU0 ] CPU is in protected mode (active)
+00083270005i[CPU0 ] CS.mode = 32 bit
+00083270005i[CPU0 ] SS.mode = 32 bit
+00083270005i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00083270005i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00083270005i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00083270005i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00083270005i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00083270005i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00083270005i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00083270005i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00083270005i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00083270005i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00083270005i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00083270005i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00083270005i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00083270005i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00083270005e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00083270005i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00083270005i[CPU0 ] cpu hardware reset
+00083270005i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00083270005i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00083270005i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00083270005i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00083270005i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00083270005i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00083270005i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00083270005i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00083270005i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00083270005i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00083270005i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00083270005i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00083270005i[     ] reset of 'unmapped' plugin device by virtual method
+00083270005i[     ] reset of 'biosdev' plugin device by virtual method
+00083270005i[     ] reset of 'speaker' plugin device by virtual method
+00083270005i[     ] reset of 'extfpuirq' plugin device by virtual method
+00083270005i[     ] reset of 'ioapic' plugin device by virtual method
+00083270005i[     ] reset of 'keyboard' plugin device by virtual method
+00083270005i[     ] reset of 'harddrv' plugin device by virtual method
+00083270005i[     ] reset of 'serial' plugin device by virtual method
+00083270005i[     ] reset of 'parallel' plugin device by virtual method
+00083274861i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00083588308i[KBD  ] reset-disable command received
+00083589572i[BIOS ] Starting rombios32
+00083590019i[BIOS ] Shutdown flag 0
+00083590617i[BIOS ] ram_size=0x00400000
+00083591029i[BIOS ] ram_end=4MB
+00083602227i[BIOS ] Found 1 cpu(s)
+00083618481i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00083631051i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00083758669i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00083758740i[BXVGA] VBE known Display Interface b0c0
+00083758772i[BXVGA] VBE known Display Interface b0c5
+00083761697i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00084107570i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00084165590i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00087255359i[BIOS ] Booting from 0000:7c00
+00087433505e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00087433505e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00087433505i[CPU0 ] CPU is in protected mode (active)
+00087433505i[CPU0 ] CS.mode = 32 bit
+00087433505i[CPU0 ] SS.mode = 32 bit
+00087433505i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00087433505i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00087433505i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00087433505i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00087433505i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00087433505i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00087433505i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00087433505i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00087433505i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00087433505i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00087433505i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00087433505i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00087433505i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00087433505i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00087433505e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00087433505i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00087433505i[CPU0 ] cpu hardware reset
+00087433505i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00087433505i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00087433505i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00087433505i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00087433505i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00087433505i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00087433505i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00087433505i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00087433505i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00087433505i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00087433505i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00087433505i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00087433505i[     ] reset of 'unmapped' plugin device by virtual method
+00087433505i[     ] reset of 'biosdev' plugin device by virtual method
+00087433505i[     ] reset of 'speaker' plugin device by virtual method
+00087433505i[     ] reset of 'extfpuirq' plugin device by virtual method
+00087433505i[     ] reset of 'ioapic' plugin device by virtual method
+00087433505i[     ] reset of 'keyboard' plugin device by virtual method
+00087433505i[     ] reset of 'harddrv' plugin device by virtual method
+00087433505i[     ] reset of 'serial' plugin device by virtual method
+00087433505i[     ] reset of 'parallel' plugin device by virtual method
+00087438361i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00087751808i[KBD  ] reset-disable command received
+00087753072i[BIOS ] Starting rombios32
+00087753519i[BIOS ] Shutdown flag 0
+00087754117i[BIOS ] ram_size=0x00400000
+00087754529i[BIOS ] ram_end=4MB
+00087765595i[BIOS ] Found 1 cpu(s)
+00087781849i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00087794419i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00087922037i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00087922108i[BXVGA] VBE known Display Interface b0c0
+00087922140i[BXVGA] VBE known Display Interface b0c5
+00087925065i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00088270938i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00088328958i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00091418857i[BIOS ] Booting from 0000:7c00
+00091597003e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00091597003e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00091597003i[CPU0 ] CPU is in protected mode (active)
+00091597003i[CPU0 ] CS.mode = 32 bit
+00091597003i[CPU0 ] SS.mode = 32 bit
+00091597003i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00091597003i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00091597003i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00091597003i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00091597003i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00091597003i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00091597003i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00091597003i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00091597003i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00091597003i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00091597003i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00091597003i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00091597003i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00091597003i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00091597003e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00091597003i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00091597003i[CPU0 ] cpu hardware reset
+00091597003i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00091597003i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00091597003i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00091597003i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00091597003i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00091597003i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00091597003i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00091597003i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00091597003i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00091597003i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00091597003i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00091597003i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00091597003i[     ] reset of 'unmapped' plugin device by virtual method
+00091597003i[     ] reset of 'biosdev' plugin device by virtual method
+00091597003i[     ] reset of 'speaker' plugin device by virtual method
+00091597003i[     ] reset of 'extfpuirq' plugin device by virtual method
+00091597003i[     ] reset of 'ioapic' plugin device by virtual method
+00091597003i[     ] reset of 'keyboard' plugin device by virtual method
+00091597003i[     ] reset of 'harddrv' plugin device by virtual method
+00091597003i[     ] reset of 'serial' plugin device by virtual method
+00091597003i[     ] reset of 'parallel' plugin device by virtual method
+00091601859i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00091915306i[KBD  ] reset-disable command received
+00091916570i[BIOS ] Starting rombios32
+00091917017i[BIOS ] Shutdown flag 0
+00091917615i[BIOS ] ram_size=0x00400000
+00091918027i[BIOS ] ram_end=4MB
+00091929237i[BIOS ] Found 1 cpu(s)
+00091945491i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00091958061i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00092085679i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00092085750i[BXVGA] VBE known Display Interface b0c0
+00092085782i[BXVGA] VBE known Display Interface b0c5
+00092088707i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00092434580i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00092492600i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00095582359i[BIOS ] Booting from 0000:7c00
+00095760505e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00095760505e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00095760505i[CPU0 ] CPU is in protected mode (active)
+00095760505i[CPU0 ] CS.mode = 32 bit
+00095760505i[CPU0 ] SS.mode = 32 bit
+00095760505i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00095760505i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00095760505i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00095760505i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00095760505i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00095760505i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00095760505i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00095760505i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00095760505i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00095760505i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00095760505i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00095760505i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00095760505i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00095760505i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00095760505e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00095760505i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00095760505i[CPU0 ] cpu hardware reset
+00095760505i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00095760505i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00095760505i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00095760505i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00095760505i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00095760505i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00095760505i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00095760505i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00095760505i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00095760505i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00095760505i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00095760505i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00095760505i[     ] reset of 'unmapped' plugin device by virtual method
+00095760505i[     ] reset of 'biosdev' plugin device by virtual method
+00095760505i[     ] reset of 'speaker' plugin device by virtual method
+00095760505i[     ] reset of 'extfpuirq' plugin device by virtual method
+00095760505i[     ] reset of 'ioapic' plugin device by virtual method
+00095760505i[     ] reset of 'keyboard' plugin device by virtual method
+00095760505i[     ] reset of 'harddrv' plugin device by virtual method
+00095760505i[     ] reset of 'serial' plugin device by virtual method
+00095760505i[     ] reset of 'parallel' plugin device by virtual method
+00095765361i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00096078808i[KBD  ] reset-disable command received
+00096080072i[BIOS ] Starting rombios32
+00096080519i[BIOS ] Shutdown flag 0
+00096081117i[BIOS ] ram_size=0x00400000
+00096081529i[BIOS ] ram_end=4MB
+00096092727i[BIOS ] Found 1 cpu(s)
+00096108981i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00096121551i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00096249169i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00096249240i[BXVGA] VBE known Display Interface b0c0
+00096249272i[BXVGA] VBE known Display Interface b0c5
+00096252197i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00096598070i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00096656090i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00099745859i[BIOS ] Booting from 0000:7c00
+00099924005e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00099924005e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00099924005i[CPU0 ] CPU is in protected mode (active)
+00099924005i[CPU0 ] CS.mode = 32 bit
+00099924005i[CPU0 ] SS.mode = 32 bit
+00099924005i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00099924005i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00099924005i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00099924005i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00099924005i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00099924005i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00099924005i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00099924005i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00099924005i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00099924005i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00099924005i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00099924005i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00099924005i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00099924005i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00099924005e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00099924005i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00099924005i[CPU0 ] cpu hardware reset
+00099924005i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00099924005i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00099924005i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00099924005i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00099924005i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00099924005i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00099924005i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00099924005i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00099924005i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00099924005i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00099924005i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00099924005i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00099924005i[     ] reset of 'unmapped' plugin device by virtual method
+00099924005i[     ] reset of 'biosdev' plugin device by virtual method
+00099924005i[     ] reset of 'speaker' plugin device by virtual method
+00099924005i[     ] reset of 'extfpuirq' plugin device by virtual method
+00099924005i[     ] reset of 'ioapic' plugin device by virtual method
+00099924005i[     ] reset of 'keyboard' plugin device by virtual method
+00099924005i[     ] reset of 'harddrv' plugin device by virtual method
+00099924005i[     ] reset of 'serial' plugin device by virtual method
+00099924005i[     ] reset of 'parallel' plugin device by virtual method
+00099928861i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00100242308i[KBD  ] reset-disable command received
+00100243572i[BIOS ] Starting rombios32
+00100244019i[BIOS ] Shutdown flag 0
+00100244617i[BIOS ] ram_size=0x00400000
+00100245029i[BIOS ] ram_end=4MB
+00100256095i[BIOS ] Found 1 cpu(s)
+00100272349i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00100284919i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00100412537i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00100412608i[BXVGA] VBE known Display Interface b0c0
+00100412640i[BXVGA] VBE known Display Interface b0c5
+00100415565i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00100761438i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00100819458i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00103909357i[BIOS ] Booting from 0000:7c00
+00104087503e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00104087503e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00104087503i[CPU0 ] CPU is in protected mode (active)
+00104087503i[CPU0 ] CS.mode = 32 bit
+00104087503i[CPU0 ] SS.mode = 32 bit
+00104087503i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00104087503i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00104087503i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00104087503i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00104087503i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00104087503i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00104087503i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00104087503i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00104087503i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00104087503i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00104087503i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00104087503i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00104087503i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00104087503i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00104087503e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00104087503i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00104087503i[CPU0 ] cpu hardware reset
+00104087503i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00104087503i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00104087503i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00104087503i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00104087503i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00104087503i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00104087503i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00104087503i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00104087503i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00104087503i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00104087503i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00104087503i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00104087503i[     ] reset of 'unmapped' plugin device by virtual method
+00104087503i[     ] reset of 'biosdev' plugin device by virtual method
+00104087503i[     ] reset of 'speaker' plugin device by virtual method
+00104087503i[     ] reset of 'extfpuirq' plugin device by virtual method
+00104087503i[     ] reset of 'ioapic' plugin device by virtual method
+00104087503i[     ] reset of 'keyboard' plugin device by virtual method
+00104087503i[     ] reset of 'harddrv' plugin device by virtual method
+00104087503i[     ] reset of 'serial' plugin device by virtual method
+00104087503i[     ] reset of 'parallel' plugin device by virtual method
+00104092359i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00104405806i[KBD  ] reset-disable command received
+00104407070i[BIOS ] Starting rombios32
+00104407517i[BIOS ] Shutdown flag 0
+00104408115i[BIOS ] ram_size=0x00400000
+00104408527i[BIOS ] ram_end=4MB
+00104419737i[BIOS ] Found 1 cpu(s)
+00104435991i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00104448561i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00104576179i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00104576250i[BXVGA] VBE known Display Interface b0c0
+00104576282i[BXVGA] VBE known Display Interface b0c5
+00104579207i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00104925080i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00104983100i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00108072859i[BIOS ] Booting from 0000:7c00
+00108251005e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00108251005e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00108251005i[CPU0 ] CPU is in protected mode (active)
+00108251005i[CPU0 ] CS.mode = 32 bit
+00108251005i[CPU0 ] SS.mode = 32 bit
+00108251005i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00108251005i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00108251005i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00108251005i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00108251005i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00108251005i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00108251005i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00108251005i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00108251005i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00108251005i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00108251005i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00108251005i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00108251005i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00108251005i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00108251005e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00108251005i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00108251005i[CPU0 ] cpu hardware reset
+00108251005i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00108251005i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00108251005i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00108251005i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00108251005i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00108251005i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00108251005i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00108251005i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00108251005i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00108251005i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00108251005i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00108251005i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00108251005i[     ] reset of 'unmapped' plugin device by virtual method
+00108251005i[     ] reset of 'biosdev' plugin device by virtual method
+00108251005i[     ] reset of 'speaker' plugin device by virtual method
+00108251005i[     ] reset of 'extfpuirq' plugin device by virtual method
+00108251005i[     ] reset of 'ioapic' plugin device by virtual method
+00108251005i[     ] reset of 'keyboard' plugin device by virtual method
+00108251005i[     ] reset of 'harddrv' plugin device by virtual method
+00108251005i[     ] reset of 'serial' plugin device by virtual method
+00108251005i[     ] reset of 'parallel' plugin device by virtual method
+00108255861i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00108569308i[KBD  ] reset-disable command received
+00108570572i[BIOS ] Starting rombios32
+00108571019i[BIOS ] Shutdown flag 0
+00108571617i[BIOS ] ram_size=0x00400000
+00108572029i[BIOS ] ram_end=4MB
+00108583227i[BIOS ] Found 1 cpu(s)
+00108599481i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00108612051i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00108739669i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00108739740i[BXVGA] VBE known Display Interface b0c0
+00108739772i[BXVGA] VBE known Display Interface b0c5
+00108742697i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00109088570i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00109146590i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00112236359i[BIOS ] Booting from 0000:7c00
+00112414505e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00112414505e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00112414505i[CPU0 ] CPU is in protected mode (active)
+00112414505i[CPU0 ] CS.mode = 32 bit
+00112414505i[CPU0 ] SS.mode = 32 bit
+00112414505i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00112414505i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00112414505i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00112414505i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00112414505i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00112414505i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00112414505i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00112414505i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00112414505i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00112414505i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00112414505i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00112414505i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00112414505i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00112414505i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00112414505e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00112414505i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00112414505i[CPU0 ] cpu hardware reset
+00112414505i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00112414505i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00112414505i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00112414505i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00112414505i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00112414505i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00112414505i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00112414505i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00112414505i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00112414505i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00112414505i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00112414505i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00112414505i[     ] reset of 'unmapped' plugin device by virtual method
+00112414505i[     ] reset of 'biosdev' plugin device by virtual method
+00112414505i[     ] reset of 'speaker' plugin device by virtual method
+00112414505i[     ] reset of 'extfpuirq' plugin device by virtual method
+00112414505i[     ] reset of 'ioapic' plugin device by virtual method
+00112414505i[     ] reset of 'keyboard' plugin device by virtual method
+00112414505i[     ] reset of 'harddrv' plugin device by virtual method
+00112414505i[     ] reset of 'serial' plugin device by virtual method
+00112414505i[     ] reset of 'parallel' plugin device by virtual method
+00112419361i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00112732808i[KBD  ] reset-disable command received
+00112734072i[BIOS ] Starting rombios32
+00112734519i[BIOS ] Shutdown flag 0
+00112735117i[BIOS ] ram_size=0x00400000
+00112735529i[BIOS ] ram_end=4MB
+00112746595i[BIOS ] Found 1 cpu(s)
+00112762849i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00112775419i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00112903037i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00112903108i[BXVGA] VBE known Display Interface b0c0
+00112903140i[BXVGA] VBE known Display Interface b0c5
+00112906065i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00113251938i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00113309958i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00116399857i[BIOS ] Booting from 0000:7c00
+00116578003e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00116578003e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00116578003i[CPU0 ] CPU is in protected mode (active)
+00116578003i[CPU0 ] CS.mode = 32 bit
+00116578003i[CPU0 ] SS.mode = 32 bit
+00116578003i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00116578003i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00116578003i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00116578003i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00116578003i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00116578003i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00116578003i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00116578003i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00116578003i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00116578003i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00116578003i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00116578003i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00116578003i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00116578003i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00116578003e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00116578003i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00116578003i[CPU0 ] cpu hardware reset
+00116578003i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00116578003i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00116578003i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00116578003i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00116578003i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00116578003i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00116578003i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00116578003i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00116578003i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00116578003i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00116578003i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00116578003i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00116578003i[     ] reset of 'unmapped' plugin device by virtual method
+00116578003i[     ] reset of 'biosdev' plugin device by virtual method
+00116578003i[     ] reset of 'speaker' plugin device by virtual method
+00116578003i[     ] reset of 'extfpuirq' plugin device by virtual method
+00116578003i[     ] reset of 'ioapic' plugin device by virtual method
+00116578003i[     ] reset of 'keyboard' plugin device by virtual method
+00116578003i[     ] reset of 'harddrv' plugin device by virtual method
+00116578003i[     ] reset of 'serial' plugin device by virtual method
+00116578003i[     ] reset of 'parallel' plugin device by virtual method
+00116582859i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00116896306i[KBD  ] reset-disable command received
+00116897570i[BIOS ] Starting rombios32
+00116898017i[BIOS ] Shutdown flag 0
+00116898615i[BIOS ] ram_size=0x00400000
+00116899027i[BIOS ] ram_end=4MB
+00116910237i[BIOS ] Found 1 cpu(s)
+00116926491i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00116939061i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00117066679i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00117066750i[BXVGA] VBE known Display Interface b0c0
+00117066782i[BXVGA] VBE known Display Interface b0c5
+00117069707i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00117415580i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00117473600i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00120563359i[BIOS ] Booting from 0000:7c00
+00120648856i[NGUI ] ips = 120.649M
+00120741505e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00120741505e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00120741505i[CPU0 ] CPU is in protected mode (active)
+00120741505i[CPU0 ] CS.mode = 32 bit
+00120741505i[CPU0 ] SS.mode = 32 bit
+00120741505i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00120741505i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00120741505i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00120741505i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00120741505i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00120741505i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00120741505i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00120741505i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00120741505i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00120741505i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00120741505i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00120741505i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00120741505i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00120741505i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00120741505e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00120741505i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00120741505i[CPU0 ] cpu hardware reset
+00120741505i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00120741505i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00120741505i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00120741505i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00120741505i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00120741505i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00120741505i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00120741505i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00120741505i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00120741505i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00120741505i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00120741505i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00120741505i[     ] reset of 'unmapped' plugin device by virtual method
+00120741505i[     ] reset of 'biosdev' plugin device by virtual method
+00120741505i[     ] reset of 'speaker' plugin device by virtual method
+00120741505i[     ] reset of 'extfpuirq' plugin device by virtual method
+00120741505i[     ] reset of 'ioapic' plugin device by virtual method
+00120741505i[     ] reset of 'keyboard' plugin device by virtual method
+00120741505i[     ] reset of 'harddrv' plugin device by virtual method
+00120741505i[     ] reset of 'serial' plugin device by virtual method
+00120741505i[     ] reset of 'parallel' plugin device by virtual method
+00120746361i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00121059808i[KBD  ] reset-disable command received
+00121061072i[BIOS ] Starting rombios32
+00121061519i[BIOS ] Shutdown flag 0
+00121062117i[BIOS ] ram_size=0x00400000
+00121062529i[BIOS ] ram_end=4MB
+00121073727i[BIOS ] Found 1 cpu(s)
+00121089981i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00121102551i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00121230169i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00121230240i[BXVGA] VBE known Display Interface b0c0
+00121230272i[BXVGA] VBE known Display Interface b0c5
+00121233197i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00121579070i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00121637090i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00124726859i[BIOS ] Booting from 0000:7c00
+00124905005e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00124905005e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00124905005i[CPU0 ] CPU is in protected mode (active)
+00124905005i[CPU0 ] CS.mode = 32 bit
+00124905005i[CPU0 ] SS.mode = 32 bit
+00124905005i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00124905005i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00124905005i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00124905005i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00124905005i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00124905005i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00124905005i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00124905005i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00124905005i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00124905005i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00124905005i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00124905005i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00124905005i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00124905005i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00124905005e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00124905005i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00124905005i[CPU0 ] cpu hardware reset
+00124905005i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00124905005i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00124905005i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00124905005i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00124905005i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00124905005i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00124905005i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00124905005i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00124905005i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00124905005i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00124905005i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00124905005i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00124905005i[     ] reset of 'unmapped' plugin device by virtual method
+00124905005i[     ] reset of 'biosdev' plugin device by virtual method
+00124905005i[     ] reset of 'speaker' plugin device by virtual method
+00124905005i[     ] reset of 'extfpuirq' plugin device by virtual method
+00124905005i[     ] reset of 'ioapic' plugin device by virtual method
+00124905005i[     ] reset of 'keyboard' plugin device by virtual method
+00124905005i[     ] reset of 'harddrv' plugin device by virtual method
+00124905005i[     ] reset of 'serial' plugin device by virtual method
+00124905005i[     ] reset of 'parallel' plugin device by virtual method
+00124909861i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00125223308i[KBD  ] reset-disable command received
+00125224572i[BIOS ] Starting rombios32
+00125225019i[BIOS ] Shutdown flag 0
+00125225617i[BIOS ] ram_size=0x00400000
+00125226029i[BIOS ] ram_end=4MB
+00125237095i[BIOS ] Found 1 cpu(s)
+00125253349i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00125265919i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00125393537i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00125393608i[BXVGA] VBE known Display Interface b0c0
+00125393640i[BXVGA] VBE known Display Interface b0c5
+00125396565i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00125742438i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00125800458i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00128890357i[BIOS ] Booting from 0000:7c00
+00129068503e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00129068503e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00129068503i[CPU0 ] CPU is in protected mode (active)
+00129068503i[CPU0 ] CS.mode = 32 bit
+00129068503i[CPU0 ] SS.mode = 32 bit
+00129068503i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00129068503i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00129068503i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00129068503i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00129068503i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00129068503i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00129068503i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00129068503i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00129068503i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00129068503i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00129068503i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00129068503i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00129068503i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00129068503i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00129068503e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00129068503i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00129068503i[CPU0 ] cpu hardware reset
+00129068503i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00129068503i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00129068503i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00129068503i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00129068503i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00129068503i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00129068503i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00129068503i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00129068503i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00129068503i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00129068503i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00129068503i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00129068503i[     ] reset of 'unmapped' plugin device by virtual method
+00129068503i[     ] reset of 'biosdev' plugin device by virtual method
+00129068503i[     ] reset of 'speaker' plugin device by virtual method
+00129068503i[     ] reset of 'extfpuirq' plugin device by virtual method
+00129068503i[     ] reset of 'ioapic' plugin device by virtual method
+00129068503i[     ] reset of 'keyboard' plugin device by virtual method
+00129068503i[     ] reset of 'harddrv' plugin device by virtual method
+00129068503i[     ] reset of 'serial' plugin device by virtual method
+00129068503i[     ] reset of 'parallel' plugin device by virtual method
+00129073359i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00129386806i[KBD  ] reset-disable command received
+00129388070i[BIOS ] Starting rombios32
+00129388517i[BIOS ] Shutdown flag 0
+00129389115i[BIOS ] ram_size=0x00400000
+00129389527i[BIOS ] ram_end=4MB
+00129400737i[BIOS ] Found 1 cpu(s)
+00129416991i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00129429561i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00129557179i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00129557250i[BXVGA] VBE known Display Interface b0c0
+00129557282i[BXVGA] VBE known Display Interface b0c5
+00129560207i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00129906080i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00129964100i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00133053859i[BIOS ] Booting from 0000:7c00
+00133232005e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00133232005e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00133232005i[CPU0 ] CPU is in protected mode (active)
+00133232005i[CPU0 ] CS.mode = 32 bit
+00133232005i[CPU0 ] SS.mode = 32 bit
+00133232005i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00133232005i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00133232005i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00133232005i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00133232005i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00133232005i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00133232005i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00133232005i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00133232005i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00133232005i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00133232005i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00133232005i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00133232005i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00133232005i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00133232005e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00133232005i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00133232005i[CPU0 ] cpu hardware reset
+00133232005i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00133232005i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00133232005i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00133232005i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00133232005i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00133232005i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00133232005i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00133232005i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00133232005i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00133232005i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00133232005i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00133232005i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00133232005i[     ] reset of 'unmapped' plugin device by virtual method
+00133232005i[     ] reset of 'biosdev' plugin device by virtual method
+00133232005i[     ] reset of 'speaker' plugin device by virtual method
+00133232005i[     ] reset of 'extfpuirq' plugin device by virtual method
+00133232005i[     ] reset of 'ioapic' plugin device by virtual method
+00133232005i[     ] reset of 'keyboard' plugin device by virtual method
+00133232005i[     ] reset of 'harddrv' plugin device by virtual method
+00133232005i[     ] reset of 'serial' plugin device by virtual method
+00133232005i[     ] reset of 'parallel' plugin device by virtual method
+00133236861i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00133550308i[KBD  ] reset-disable command received
+00133551572i[BIOS ] Starting rombios32
+00133552019i[BIOS ] Shutdown flag 0
+00133552617i[BIOS ] ram_size=0x00400000
+00133553029i[BIOS ] ram_end=4MB
+00133564227i[BIOS ] Found 1 cpu(s)
+00133580481i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00133593051i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00133720669i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00133720740i[BXVGA] VBE known Display Interface b0c0
+00133720772i[BXVGA] VBE known Display Interface b0c5
+00133723697i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00134069570i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00134127590i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00137217359i[BIOS ] Booting from 0000:7c00
+00137395505e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00137395505e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00137395505i[CPU0 ] CPU is in protected mode (active)
+00137395505i[CPU0 ] CS.mode = 32 bit
+00137395505i[CPU0 ] SS.mode = 32 bit
+00137395505i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00137395505i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00137395505i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00137395505i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00137395505i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00137395505i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00137395505i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00137395505i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00137395505i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00137395505i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00137395505i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00137395505i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00137395505i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00137395505i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00137395505e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00137395505i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00137395505i[CPU0 ] cpu hardware reset
+00137395505i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00137395505i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00137395505i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00137395505i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00137395505i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00137395505i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00137395505i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00137395505i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00137395505i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00137395505i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00137395505i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00137395505i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00137395505i[     ] reset of 'unmapped' plugin device by virtual method
+00137395505i[     ] reset of 'biosdev' plugin device by virtual method
+00137395505i[     ] reset of 'speaker' plugin device by virtual method
+00137395505i[     ] reset of 'extfpuirq' plugin device by virtual method
+00137395505i[     ] reset of 'ioapic' plugin device by virtual method
+00137395505i[     ] reset of 'keyboard' plugin device by virtual method
+00137395505i[     ] reset of 'harddrv' plugin device by virtual method
+00137395505i[     ] reset of 'serial' plugin device by virtual method
+00137395505i[     ] reset of 'parallel' plugin device by virtual method
+00137400361i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00137713808i[KBD  ] reset-disable command received
+00137715072i[BIOS ] Starting rombios32
+00137715519i[BIOS ] Shutdown flag 0
+00137716117i[BIOS ] ram_size=0x00400000
+00137716529i[BIOS ] ram_end=4MB
+00137727595i[BIOS ] Found 1 cpu(s)
+00137743849i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00137756419i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00137884037i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00137884108i[BXVGA] VBE known Display Interface b0c0
+00137884140i[BXVGA] VBE known Display Interface b0c5
+00137887065i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00138232938i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00138290958i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00141380857i[BIOS ] Booting from 0000:7c00
+00141559003e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00141559003e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00141559003i[CPU0 ] CPU is in protected mode (active)
+00141559003i[CPU0 ] CS.mode = 32 bit
+00141559003i[CPU0 ] SS.mode = 32 bit
+00141559003i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00141559003i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00141559003i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00141559003i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00141559003i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00141559003i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00141559003i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00141559003i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00141559003i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00141559003i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00141559003i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00141559003i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00141559003i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00141559003i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00141559003e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00141559003i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00141559003i[CPU0 ] cpu hardware reset
+00141559003i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00141559003i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00141559003i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00141559003i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00141559003i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00141559003i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00141559003i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00141559003i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00141559003i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00141559003i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00141559003i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00141559003i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00141559003i[     ] reset of 'unmapped' plugin device by virtual method
+00141559003i[     ] reset of 'biosdev' plugin device by virtual method
+00141559003i[     ] reset of 'speaker' plugin device by virtual method
+00141559003i[     ] reset of 'extfpuirq' plugin device by virtual method
+00141559003i[     ] reset of 'ioapic' plugin device by virtual method
+00141559003i[     ] reset of 'keyboard' plugin device by virtual method
+00141559003i[     ] reset of 'harddrv' plugin device by virtual method
+00141559003i[     ] reset of 'serial' plugin device by virtual method
+00141559003i[     ] reset of 'parallel' plugin device by virtual method
+00141563859i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00141877306i[KBD  ] reset-disable command received
+00141878570i[BIOS ] Starting rombios32
+00141879017i[BIOS ] Shutdown flag 0
+00141879615i[BIOS ] ram_size=0x00400000
+00141880027i[BIOS ] ram_end=4MB
+00141891237i[BIOS ] Found 1 cpu(s)
+00141907491i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00141920061i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00142047679i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00142047750i[BXVGA] VBE known Display Interface b0c0
+00142047782i[BXVGA] VBE known Display Interface b0c5
+00142050707i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00142396580i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00142454600i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00145544359i[BIOS ] Booting from 0000:7c00
+00145722505e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00145722505e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00145722505i[CPU0 ] CPU is in protected mode (active)
+00145722505i[CPU0 ] CS.mode = 32 bit
+00145722505i[CPU0 ] SS.mode = 32 bit
+00145722505i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00145722505i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00145722505i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00145722505i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00145722505i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00145722505i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00145722505i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00145722505i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00145722505i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00145722505i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00145722505i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00145722505i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00145722505i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00145722505i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00145722505e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00145722505i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00145722505i[CPU0 ] cpu hardware reset
+00145722505i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00145722505i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00145722505i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00145722505i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00145722505i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00145722505i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00145722505i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00145722505i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00145722505i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00145722505i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00145722505i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00145722505i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00145722505i[     ] reset of 'unmapped' plugin device by virtual method
+00145722505i[     ] reset of 'biosdev' plugin device by virtual method
+00145722505i[     ] reset of 'speaker' plugin device by virtual method
+00145722505i[     ] reset of 'extfpuirq' plugin device by virtual method
+00145722505i[     ] reset of 'ioapic' plugin device by virtual method
+00145722505i[     ] reset of 'keyboard' plugin device by virtual method
+00145722505i[     ] reset of 'harddrv' plugin device by virtual method
+00145722505i[     ] reset of 'serial' plugin device by virtual method
+00145722505i[     ] reset of 'parallel' plugin device by virtual method
+00145727361i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00146040808i[KBD  ] reset-disable command received
+00146042072i[BIOS ] Starting rombios32
+00146042519i[BIOS ] Shutdown flag 0
+00146043117i[BIOS ] ram_size=0x00400000
+00146043529i[BIOS ] ram_end=4MB
+00146054727i[BIOS ] Found 1 cpu(s)
+00146070981i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00146083551i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00146211169i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00146211240i[BXVGA] VBE known Display Interface b0c0
+00146211272i[BXVGA] VBE known Display Interface b0c5
+00146214197i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00146560070i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00146618090i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00149707859i[BIOS ] Booting from 0000:7c00
+00149886005e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00149886005e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00149886005i[CPU0 ] CPU is in protected mode (active)
+00149886005i[CPU0 ] CS.mode = 32 bit
+00149886005i[CPU0 ] SS.mode = 32 bit
+00149886005i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00149886005i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00149886005i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00149886005i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00149886005i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00149886005i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00149886005i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00149886005i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00149886005i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00149886005i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00149886005i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00149886005i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00149886005i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00149886005i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00149886005e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00149886005i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00149886005i[CPU0 ] cpu hardware reset
+00149886005i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00149886005i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00149886005i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00149886005i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00149886005i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00149886005i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00149886005i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00149886005i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00149886005i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00149886005i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00149886005i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00149886005i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00149886005i[     ] reset of 'unmapped' plugin device by virtual method
+00149886005i[     ] reset of 'biosdev' plugin device by virtual method
+00149886005i[     ] reset of 'speaker' plugin device by virtual method
+00149886005i[     ] reset of 'extfpuirq' plugin device by virtual method
+00149886005i[     ] reset of 'ioapic' plugin device by virtual method
+00149886005i[     ] reset of 'keyboard' plugin device by virtual method
+00149886005i[     ] reset of 'harddrv' plugin device by virtual method
+00149886005i[     ] reset of 'serial' plugin device by virtual method
+00149886005i[     ] reset of 'parallel' plugin device by virtual method
+00149890861i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00150204308i[KBD  ] reset-disable command received
+00150205572i[BIOS ] Starting rombios32
+00150206019i[BIOS ] Shutdown flag 0
+00150206617i[BIOS ] ram_size=0x00400000
+00150207029i[BIOS ] ram_end=4MB
+00150218095i[BIOS ] Found 1 cpu(s)
+00150234349i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00150246919i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00150374537i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00150374608i[BXVGA] VBE known Display Interface b0c0
+00150374640i[BXVGA] VBE known Display Interface b0c5
+00150377565i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00150723438i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00150781458i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00153871357i[BIOS ] Booting from 0000:7c00
+00154049503e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00154049503e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00154049503i[CPU0 ] CPU is in protected mode (active)
+00154049503i[CPU0 ] CS.mode = 32 bit
+00154049503i[CPU0 ] SS.mode = 32 bit
+00154049503i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00154049503i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00154049503i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00154049503i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00154049503i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00154049503i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00154049503i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00154049503i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00154049503i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00154049503i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00154049503i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00154049503i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00154049503i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00154049503i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00154049503e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00154049503i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00154049503i[CPU0 ] cpu hardware reset
+00154049503i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00154049503i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00154049503i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00154049503i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00154049503i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00154049503i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00154049503i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00154049503i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00154049503i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00154049503i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00154049503i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00154049503i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00154049503i[     ] reset of 'unmapped' plugin device by virtual method
+00154049503i[     ] reset of 'biosdev' plugin device by virtual method
+00154049503i[     ] reset of 'speaker' plugin device by virtual method
+00154049503i[     ] reset of 'extfpuirq' plugin device by virtual method
+00154049503i[     ] reset of 'ioapic' plugin device by virtual method
+00154049503i[     ] reset of 'keyboard' plugin device by virtual method
+00154049503i[     ] reset of 'harddrv' plugin device by virtual method
+00154049503i[     ] reset of 'serial' plugin device by virtual method
+00154049503i[     ] reset of 'parallel' plugin device by virtual method
+00154054359i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00154367806i[KBD  ] reset-disable command received
+00154369070i[BIOS ] Starting rombios32
+00154369517i[BIOS ] Shutdown flag 0
+00154370115i[BIOS ] ram_size=0x00400000
+00154370527i[BIOS ] ram_end=4MB
+00154381737i[BIOS ] Found 1 cpu(s)
+00154397991i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00154410561i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00154538179i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00154538250i[BXVGA] VBE known Display Interface b0c0
+00154538282i[BXVGA] VBE known Display Interface b0c5
+00154541207i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00154887080i[BIOS ] ata0-0: PCHS=1/16/63 translation=none LCHS=1/16/63
+00154945100i[BIOS ] ata0-1: PCHS=4/16/63 translation=none LCHS=4/16/63
+00158034859i[BIOS ] Booting from 0000:7c00
+00158213005e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x0e)
+00158213005e[CPU0 ] interrupt(): gate descriptor is not valid sys seg (vector=0x08)
+00158213005i[CPU0 ] CPU is in protected mode (active)
+00158213005i[CPU0 ] CS.mode = 32 bit
+00158213005i[CPU0 ] SS.mode = 32 bit
+00158213005i[CPU0 ] | EAX=539fc000  EBX=539fc000  ECX=c002feb4  EDX=000003d4
+00158213005i[CPU0 ] | ESP=c002ff30  EBP=c002ff48  ESI=c010c917  EDI=c010d5a6
+00158213005i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00158213005i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00158213005i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00158213005i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00158213005i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00158213005i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00158213005i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00158213005i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00158213005i[CPU0 ] | EIP=c0105c6f (c0105c6f)
+00158213005i[CPU0 ] | CR0=0xe0010015 CR2=0x539fc000
+00158213005i[CPU0 ] | CR3=0x00010000 CR4=0x00000000
+00158213005i[CPU0 ] 0xc0105c6f>> cmp dword ptr ds:[eax], 0x00000000 : 833800
+00158213005e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00158213005i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00158213005i[CPU0 ] cpu hardware reset
+00158213005i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x00000000fee00000
+00158213005i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00158213005i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00000008 0fcbfbff
+00158213005i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00158213005i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00158213005i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00158213005i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00158213005i[CPU0 ] CPUID[0x80000000]: 80000004 00000000 00000000 00000000
+00158213005i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000000 00000000
+00158213005i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00158213005i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00158213005i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00158213005i[     ] reset of 'unmapped' plugin device by virtual method
+00158213005i[     ] reset of 'biosdev' plugin device by virtual method
+00158213005i[     ] reset of 'speaker' plugin device by virtual method
+00158213005i[     ] reset of 'extfpuirq' plugin device by virtual method
+00158213005i[     ] reset of 'ioapic' plugin device by virtual method
+00158213005i[     ] reset of 'keyboard' plugin device by virtual method
+00158213005i[     ] reset of 'harddrv' plugin device by virtual method
+00158213005i[     ] reset of 'serial' plugin device by virtual method
+00158213005i[     ] reset of 'parallel' plugin device by virtual method
+00158217861i[BIOS ] $Revision: 10789 $ $Date: 2011-11-24 17:03:51 +0100 (Do, 24. Nov 2011) $
+00158531308i[KBD  ] reset-disable command received
+00158532572i[BIOS ] Starting rombios32
+00158533019i[BIOS ] Shutdown flag 0
+00158533617i[BIOS ] ram_size=0x00400000
+00158534029i[BIOS ] ram_end=4MB
+00158545227i[BIOS ] Found 1 cpu(s)
+00158561481i[BIOS ] bios_table_addr: 0x000fbde8 end=0x000fcc00
+00158574051i[BIOS ] bios_table_cur_addr: 0x000fbde8
+00158638943p[     ] >>PANIC<< SIGNAL 2 caught
+00158638943i[CPU0 ] CPU is in real mode (active)
+00158638943i[CPU0 ] CS.mode = 16 bit
+00158638943i[CPU0 ] SS.mode = 16 bit
+00158638943i[CPU0 ] | EAX=6000001b  EBX=0000546c  ECX=00094d95  EDX=000f0000
+00158638943i[CPU0 ] | ESP=0000ffe6  EBP=00000000  ESI=000e32d8  EDI=0000070c
+00158638943i[CPU0 ] | IOPL=0 id vip vif ac vm rf nt of df if tf sf zf af PF CF
+00158638943i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00158638943i[CPU0 ] |  CS:f000( 0004| 0|  0) 000f0000 0000ffff 0 0
+00158638943i[CPU0 ] |  DS:c000( 0005| 0|  0) 000c0000 0000ffff 0 0
+00158638943i[CPU0 ] |  SS:0000( 0005| 0|  0) 00000000 0000ffff 0 0
+00158638943i[CPU0 ] |  ES:0000( 0005| 0|  0) 00000000 0000ffff 0 0
+00158638943i[CPU0 ] |  FS:0000( 0005| 0|  0) 00000000 0000ffff 0 0
+00158638943i[CPU0 ] |  GS:0000( 0005| 0|  0) 00000000 0000ffff 0 0
+00158638943i[CPU0 ] | EIP=0000bbf5 (0000bbf4)
+00158638943i[CPU0 ] | CR0=0x60000010 CR2=0x00000000
+00158638943i[CPU0 ] | CR3=0x00000000 CR4=0x00000000
+00158638943i[CPU0 ] 0x0000bbf4>> inc bx : 43
+00158638943i[CMOS ] Last time is 152 (Thu Jan  1 05:32:32 1970)
+00158638943i[NGUI ] bx_nogui_gui_c::exit() not implemented yet.
+00158638943i[     ] restoring default signal behavior
+00158638943i[CTRL ] quit_sim called with exit code 1
